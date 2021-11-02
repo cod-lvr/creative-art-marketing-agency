@@ -19,6 +19,11 @@ img {
   width: 100%;
 }
 
+p {
+  line-height: 34px;
+  color: rgb(160, 160, 160);
+  letter-spacing: 00.114em;
+}
 .btn-prim {
   background-color: rgb(218, 216, 216);
   padding: 0.5rem 2rem;
@@ -88,11 +93,63 @@ img {
   text-transform: capitalize;
 }
 
-#hero .text-box p {
-  color: rgb(160, 160, 160);
-}
-
 #hero .photo {
   width: 60%;
 }
 /* ####### about container ########  */
+#about-container {
+  margin: 1rem 3rem;
+  padding: 2rem;
+  background-color: #494949;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#about-container .photos {
+  position: relative;
+  width: 100%;
+}
+
+#about-container .photos img:last-child {
+  position: absolute;
+  top: 100px;
+  left: 7px;
+}
+
+#about-container .about-box {
+  margin-left: 1.7rem;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+#about-container .about-box h3 {
+  color: #c4c4c4;
+  letter-spacing: 0.114em;
+  font-size: 1.2rem;
+}
+
+.line {
+  width: 26%;
+  padding: 0.1rem;
+  background-color: #000;
+}
+
+/* ####### projects-grid ########  */
+#projects-grid {
+  margin: 4rem 3rem;
+}
+
+#projects-grid h3 {
+  color: #c4c4c4;
+  letter-spacing: 0.114em;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+#projects-grid .line {
+  width: 12%;
+  padding: 0.1rem;
+  background-color: #000;
+}
