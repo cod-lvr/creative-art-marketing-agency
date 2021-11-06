@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./assets/main.js" defer></script>
+
     <title>creative art</title>
   </head>
   <body>
@@ -14,9 +16,9 @@
         <img src="./media/logo.png" alt="logo" />
       </div>
       <div class="navbar-links">
-        <a href=""> Home </a>
-        <a href="#about-container"> About Us </a>
-        <a href=""> Contact </a>
+        <a href="#hero"> Home </a>
+        <a href="./About.html"> About Us </a>
+        <a href="./Contact.html"> Contact </a>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -41,10 +43,14 @@
           <img src="./media/illst.svg" alt="0" />
         </div>
       </section>
-      <section id="about-container">
+      <section
+        id="about-container"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         <div class="photos">
           <img src="./media/photo1.jpg" alt="photo" />
-          <img src="./media/photo2.jpg" alt="photo" />
         </div>
         <div class="about-box">
           <h3>about us</h3>
@@ -58,7 +64,12 @@
           <button class="btn-prim">Submit</button>
         </div>
       </section>
-      <section id="projects-grid">
+      <section
+        id="projects-grid"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         <div class="title-box">
           <h3>projects</h3>
           <div class="line"></div>
@@ -113,7 +124,12 @@
           <h3>some title</h3>
           <div class="line"></div>
         </div>
-        <div class="content-container">
+        <div
+          class="content-container"
+          data-aos="slide-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           <div class="text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est,
@@ -155,5 +171,9 @@
         <p>Creative art &copy;2021 copyrights reserved.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
